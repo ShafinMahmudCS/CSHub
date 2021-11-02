@@ -7,6 +7,14 @@ body{
   background-size: 290%; 
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
 @keyframes fadein {
   from {
       opacity:0;
