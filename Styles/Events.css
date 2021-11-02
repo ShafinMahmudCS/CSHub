@@ -76,17 +76,24 @@ h1 {
 .upcoming{
   display: flex;
   overflow-x: scroll;
-  width:97%;
+  width:100%;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #head{
   background-image: url(https://media.giphy.com/media/3o85xD19i22t7JMMaA/giphy.gif);
+	font-size:2.5vw;
 }
 
 /* custom scrollbar */
+
+.upcoming, .past {
+  scrollbar-color: rebeccapurple rgba(255, 255, 255, 0);
+  scrollbar-width: thin;
+}
+
 .upcoming::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -108,10 +115,10 @@ h1 {
 .past{
   display: flex;
   overflow-x: scroll;
-  width:97%;
+  width:100%;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .past::-webkit-scrollbar {
@@ -194,6 +201,10 @@ li{list-style: none;
 
   h1{
     font-size: 5.8vw;
+  }
+
+ #head{
+    font-size: 3.5vw;
   }
 
   p{
