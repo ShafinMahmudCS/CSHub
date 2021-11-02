@@ -7,6 +7,14 @@ body{
     background-size: 200%; 
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
 @keyframes fadein {
   from {
       opacity:0;
@@ -109,9 +117,11 @@ img{
 @keyframes container{
   from{
     margin-top:-100%;
+      width:10%
   }
   to {
     margin-top: 0%;
+      width:100%
   }
 }
 
