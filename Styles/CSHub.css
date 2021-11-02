@@ -1,0 +1,165 @@
+/*Body design and animations*/
+* {
+    padding:0;
+    margin:0;
+  }
+  
+  body {
+    background:url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif);
+    overflow-x:hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+    animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+
+/*content*/
+
+.content {
+  position:relative;
+  padding:10% 10% 0 10%;
+  color:#000;
+  z-index:5;
+}
+
+/*object*/
+  
+.object {
+  opacity: 0.85;
+  position:absolute;
+  height:100%;
+  width:75%;
+  background-color: rgb(36, 47, 58);
+  transform: skewX(-2.5deg) translateX(-15%);
+  border-radius: 10px;
+  border: 5px solid #737cadc9;
+  box-shadow: 70px 70px 78px #3a5ea0c9;
+}
+
+/* Welcome */
+
+h1 {
+  background-size: cover;
+  color: rgb(197, 219, 219);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 4.5vw;
+  padding-left: 6%;
+  animation:h1 1s;
+  text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 0 -2px rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0);
+}
+
+@keyframes h1{
+  from{
+    margin-top:-100%;
+    width:100%;
+  }
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+/*auto messages*/
+h2{
+  font-size: 2.5vw;
+  margin-top: 3%;
+  padding-top: 3%;
+  color:#FFCC66;
+  text-shadow: 3px 3px 8px rgba(145, 40, 40, 0.548);
+}
+
+  /* button */
+  
+.cta {
+  outline:none;
+  border:none;
+  text-decoration:none;
+  text-transform:uppercase;
+  background:#b33e3e;
+  color:#565f2d;
+  box-sizing:border-box;
+  width: 70%;
+  margin-top: 13%;
+  margin-left: 10%;
+  border-radius: 20px;
+  border: 3px solid #0f0f0f;
+  box-shadow: 4px 4px 4px 4px #0f0f0f;
+}
+
+ 
+h6{
+  color: #202020;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 1% 1% 1% 1%;
+  font-family: monospace;
+  letter-spacing: 5px;
+  cursor: pointer
+}
+h6 span{
+  transition: .5s linear
+}
+h6:hover span:nth-child(1){
+  margin-right: 5px
+}
+
+h6:hover span:nth-child(2){
+  margin-left: 30px
+}
+h6:hover span{
+  color: rgba(255, 255, 255, 0.555);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.548),
+                0 0 2px rgba(255, 255, 255, 0.527), 
+                0 0 2px rgba(255, 255, 255, 0.527);
+}
+
+/*Responsive*/  
+@media screen and (max-width: 768px){
+.content {
+  padding:27% 10% 0 10%;
+}
+
+.cta {
+  margin-top: 25%;
+}
+
+h1{
+  font-size: 6vw;
+}
+
+h2{
+  font-size: 5vw;
+}
+
+h6{
+  font-size: 4vw;
+}
+
+}
+
+@media screen and (max-width: 300px){
+.content {
+  padding:40% 10% 0 10%;
+}
+
+h1{
+  font-size: 7vw;
+}
+
+h2{
+  font-size: 6vw;
+}
+
+}
+
+
+
