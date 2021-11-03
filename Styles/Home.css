@@ -111,7 +111,7 @@ img{
 
 /*animation*/
 .container{
-  animation:container 1.5s;
+  animation:container 2.5s;
 }
 
 @keyframes container{
