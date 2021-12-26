@@ -12,5 +12,5 @@ function slideShow() {
   index++;
   if (index > slides.length) {index = 1}    
   slides[index-1].style.display = "block";  
-  setTimeout(slideShow, 1850); 
+  setTimeout(slideShow, 2000); 
 }

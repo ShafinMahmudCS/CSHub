@@ -24,7 +24,7 @@
 
 .content {
   position:relative;
-  padding:10% 10% 0 10%;
+  padding:8% 15% 0 8%;
   color:#000;
   z-index:5;
 }
@@ -35,7 +35,7 @@
   opacity: 0.85;
   position:absolute;
   height:100%;
-  width:75%;
+  width:78%;
   background-color: rgb(36, 47, 58);
   transform: skewX(-2.5deg) translateX(-15%);
   border-radius: 10px;
@@ -51,15 +51,15 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 4.5vw;
+  font-size: 5.1vw;
   padding-left: 6%;
-  animation:h1 1s;
+  animation:h1 1.8s;
   text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 0 -2px rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0);
 }
 
 @keyframes h1{
   from{
-    margin-top:-100%;
+    margin-top:-55%;
     width:100%;
   }
   to {
@@ -70,7 +70,7 @@ h1 {
 
 /*auto messages*/
 h2{
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-top: 3%;
   padding-top: 3%;
   color:#FFCC66;
@@ -125,7 +125,7 @@ h6:hover span{
 /*Responsive*/  
 @media screen and (max-width: 768px){
 .content {
-  padding:27% 10% 0 10%;
+  padding:30% 8% 0 5%;
 }
 
 .cta {
@@ -133,11 +133,11 @@ h6:hover span{
 }
 
 h1{
-  font-size: 6vw;
+  font-size: 8vw;
 }
 
 h2{
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 h6{
@@ -148,15 +148,15 @@ h6{
 
 @media screen and (max-width: 300px){
 .content {
-  padding:40% 10% 0 10%;
+  padding:40% 8% 0 4%;
 }
 
 h1{
-  font-size: 7vw;
+  font-size: 9vw;
 }
 
 h2{
-  font-size: 6vw;
+  font-size: 7vw;
 }
 
 }

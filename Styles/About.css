@@ -3,16 +3,24 @@ body{
   background-image:url(../images/background/main.jpeg);
   font-family: 'IBM Plex Sans', sans-serif;
   animation: fadein 1s;
-  margin-bottom: 10%;
-  background-size: 290%; 
+  background-size: 290%;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  overflow:scroll;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-html {
+body {
   scrollbar-width: none;
+  overflow:scroll;
+}
+
+html{
+  overflow: scroll;
 }
 
 @keyframes fadein {
@@ -25,25 +33,24 @@ html {
 }
 
 /*top navigation*/
-section{
-  background-color: black;
-  max-width: 90%;
-  max-height: 15%;
+.navigation{
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 100%;
+  padding: 0.6% 0.6% 0.6% 0.6%;
   text-align: center;
-  margin:auto;
-  border: 3px solid #fcfbfbc9;
+  z-index: 1;
   box-shadow: 5px 5px 5px 5px #222121c9;
-  border-radius: 5px;
+  border-bottom: 2.5px solid #fcfbfbc9;
 }
 
-nav{
-  margin-top: 1%;
-  margin-bottom: 1%;
-  font-size: 2vw;
-}
-
-a:link {
-  text-decoration: none;
+.navigation a {
+padding: 2.5% 2.5%;
+text-align: center;
+text-decoration: none;
+font-size: 1.8vw;
 }
 
 a:hover {
@@ -68,15 +75,10 @@ a.ds:link {
   text-decoration:underline;
 }
 
-b{
-padding-left: 2vh;
-padding-right: 2vh;
-}
-
 /*content*/
 .content {
   position:relative;
-  padding:1% 5% 3% 5%;
+  padding:1% 5% 2% 5%;
   color:rgb(7, 2, 15);
   }
 
@@ -89,7 +91,7 @@ h1, .exec {
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: 3.2vw;
   text-align: center;
 }
 
@@ -110,15 +112,15 @@ p{
 /*slider*/
 
 .point{
-  animation:point 2s;
+  animation:point 2.5s;
 }
 .nxtpoint{
-  animation:nxtpoint 2s;
+  animation:nxtpoint 2.5s;
 }
 
 @keyframes point{
   from{
-    margin-left:-100%;
+    margin-left:-70%;
     width:100%;
   }
   to {
@@ -129,7 +131,7 @@ p{
 
 @keyframes nxtpoint{
   from{
-    margin-left:100%;
+    margin-left:70%;
     width:100%;
   }
   to {
@@ -146,7 +148,6 @@ p{
 /*copyright*/
 .copyright{
   margin:auto;
-  margin:2% 3% 7% 3%;
 }
 
 .maincopy{
@@ -178,16 +179,21 @@ em{
   padding-right: 1vw;
 }
 
+ul{
+  margin:0 auto;
+  padding: 0.5% 0.5% 1.5% 0.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 li{list-style: none;
   display:inline-block;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 #dsn{
-  font-size: 1vw;
+  font-size: 0.95vw;
   float:right;
-  padding-right: 3%;
-  padding-bottom: 1%;
 }
 
 .copy{
@@ -195,41 +201,38 @@ li{list-style: none;
 }
 
 /*Responsive*/
-@media screen and (max-width: 760px){
-  .content {
-    padding:2% 2% 3% 2%;
+@media screen and (max-width: 708px){
+  body{
+  margin-bottom: 7%;
   }
-
-  section{
-    max-width: 100%;
-    height: 15%;
-    max-height: 20%;
+  
+  .content {
+    margin-top: 7%;
   }
 
   h1, .exec{
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+  
+  p{
+    font-size: 4vw;
+  }
+  
+  .navigation a {
+    font-size: 5vw;
+  }
+  
+  ul{
+    padding: 0.5% 0.5% 4% 0.5%;
+  }  
+  
+  li{
+    font-size: 5vw;
   }
 
   .point{
     color: black;
     font-size:5vw;
-  }
-
-  p{
-    font-size: 4.2vw;
-  }
-
-  nav{
-    font-size: 5.5vw;
-  }
-
-  b{
-    padding-left: 0.3vh;
-    padding-right: 0.3vh;
-  }
-
-  li{
-    font-size: 6vw;
   }
 
   #dsn{
@@ -247,6 +250,10 @@ li{list-style: none;
 }
 
 @media screen and (max-width: 300px){
+  
+  h1{
+    font-size: 6vw;
+  }
 
   p{
     font-size: 4.4vw;
