@@ -4,7 +4,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   animation: fadein 1s;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 4%;
   background-size: 200%;
   scrollbar-width: none;
   overflow: scroll;
@@ -96,7 +96,7 @@ a.ds:hover {
 .content {
   text-align: center;
   color: rgb(7, 2, 15);
-  padding: 1% 3% 3% 3%;
+  padding: 0% 3% 3% 3%;
 }
 
 /*container*/
@@ -352,8 +352,8 @@ footer i:hover {
 /*Responsive*/
 
 @media screen and (max-width: 708px) {
-  .content {
-    margin-top: 5%;
+  body {
+    margin-top: 9%;
   }
 
   .navigation {
@@ -364,6 +364,10 @@ footer i:hover {
       #14156dab,
       #100118ad
     );
+  }
+
+  #tog {
+    font-size: 5vw;
   }
 
   .container {
@@ -396,8 +400,8 @@ footer i:hover {
   }
 
   #i_con {
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
   }
 
   h1,
@@ -448,7 +452,7 @@ footer i:hover {
 }
 
 @media screen and (max-width: 300px) {
-  .content {
+  body {
     margin-top: 9%;
   }
 
