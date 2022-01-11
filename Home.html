@@ -8,102 +8,72 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="Styles/pre-loader.css"
-      title="style"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
       href="Styles/Home.css"
       title="style"
     />
-
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
       rel="stylesheet"
     />
-    <script src="Script/pre-loader.js"></script>
-    <script src="Script/Home.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="spinner-wrapper">
-      <div class="sk-chase">
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-      </div>
-    </div>
     <div class="navigation">
-      <a href="Home.html" class="s">Home</a>
-      <a href="Events.html" class="s">News and Events</a>
-      <a href="About.html" class="s">About</a>
+      <img
+        class="Navbar__Link Navbar__Link-brand"
+        src="images/icon/cshub.png"
+        alt="icon"
+        id="i_con"
+      />
+      <div class="Navbar__Link Navbar__Link-toggle">
+        <span id="tog"><i class="fas fa-bars"></i></span>
+      </div>
+
+      <nav class="Navbar__Items Navbar__Items--right" id="alignment">
+        <a href="Home.html">Home</a>
+        <a href="#jump1">Events</a>
+        <a href="#jump2">Executives</a>
+        <a href="#jump3">About</a>
+       
+      </nav>
     </div>
 
     <div class="content">
       <h1>Computing Students Hub</h1>
-      <hr />
-      <div class="container">
-        <div class="mySlides fade">
-          <img src="images/benefits/NEED.gif" alt="You need" />
-        </div>
 
-        <div class="mySlides fade">
-          <img src="images/benefits/RESUME.gif" alt="Resume review?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/INTERVIEWS.gif" alt="Mock Interviews?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/LEET.gif" alt="Leetcode Workshops?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/C0-0P.gif" alt="Co-op Workshops?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/STUDY.gif" alt="Study sessions?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/SUGGESTIONS.gif" alt="suggestions?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/FUN.gif" alt="Fun activities?" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/benefits/COVERED.gif" alt="We got you covered!" />
-        </div>
-      </div>
-
-      <hr />
-      <p class="point">
+      <p id="point">
         The club will be operated for educational and scientific purposes in
         furtherance of:
       </p>
-      <p class="nxtpoint">
+      <p id="nxtpoint">
         - Promoting an increased knowledge of computer science and its
         applications.
       </p>
-      <p class="point">
+      <p id="point">
         - Promoting a greater interest in computer science and its applications.
       </p>
-      <p class="nxtpoint">
+      <p id="nxtpoint">
         - Providing a means of communication between persons having interest in
         computer science
       </p>
-      <p class="point">- Promoting innovation and entrepreneurship.</p>
+      <p id="point">- Promoting innovation and entrepreneurship.</p>
       <hr />
       <p class="quote">
         “The computer was born to solve problems that did not exist before.” —
@@ -114,34 +84,214 @@
         the work of one extraordinary man.” - Elbert Hubbard
       </p>
     </div>
-    <div id="footer">
+    <hr>
+    <main class="container">
+        <div id="jump1"></br></div>
+            <p class="contain_head"><b>Events</b></p>
+
+            <section class="card" data-aos="flip-left" data-aos-duration="1500">
+                <img src="images/past/6.png"/>
+                <div class="details">
+                    <p>The workshop will teach you how to build a website using Javascript and React. If you don't know React, it's a library built by Facebook using JavaScript to help build responsive websites and it's very beginner-friendly.</br></br>
+
+                        PLEASE NOTE that you are required to install a few things before the event begins and REGISTER in order to join the zoom. The things you need to install are as follows:</br>
+                        1) node.js</br>
+                        2) Visual Studio Code</br>
+                        3) Git Bash (Windows users only).</br></br>
+
+                        Here's the registration link to join the zoom meeting on December 1st: <a href="https://yorkurobotics.com/react-signup">Link</a>
+                        </p>
+                </div>
+            </section>
+
+        <section class="card" data-aos="fade-up-left">
+            <img src="images/past/5.png"/>
+            <div class="details">
+                <p>
+                    We're partnering up with Lassonde Engineering Society to host a Leetcode session on November 8th, from 6-8 pm on Zoom.  Prolems from all categories (Easy/Medium/Hardcode). There will be mentors who will help you solve leetcode problems during the event.</br></br>
+
+                    If you do not know what leetcode is, it's basically a website where you can solve problems which companies ask during coding interviews. You do not need prior experience as we're here to show you how to approach the thought process of these problems.</br></br>
+                    Here's the zoom link: <a href="https://yorku.zoom.us/j/91038905074?pwd=MjFIblc4ajJndFlQeW9aR3dmaTNKdz09">Link</a>
+                 </p>
+            </div>
+        </section>
+    
+        <!-- Photo by maitree rimthong from Pexels -->
+        <section class="card" data-aos="fade-up-right">
+            <img src="images/past/4.png" />
+            <div class="details">
+                <p>Are you applying for co-op or plan on applying for a co-op/internship? Well look no further as we’re hosting our very own co-op panel with students who did co-op in the past. Our hosts will share their co-op experiences and what you can expect.</br></br>
+
+                    We will be hosting it on Zoom on Thursday, Nov 4th at 9 pm and you don’t need any registration. The Zoom link will be provided a day before the event starts.</br></br>
+                    
+                    If you have any specific questions about co-op you want us to answer during the presentation, please fill out the following Google form: <a href="https://forms.gle/Ar3oGHGofeYLYxA37">Link</a>
+                    
+                  </p>
+            </div>
+        </section>
+    
+        <!-- Photo by RODNAE Productions from Pexels -->
+        <section class="card" data-aos="flip-right" data-aos-duration="1500">
+            <img src="images/past/3.png" />
+            <div class="details">
+                <p>There will be a MATH 1019 midterm review at 4pm EST hosted by CSHub.</br></br> We have prepared some sample questions for you!
+                 </p>
+            </div>
+        </section>
+    
+        <section class="card" data-aos="fade-up-right">
+            <img src="images/past/2.png" />
+            <div class="details">
+                <p>We’re hosting our second workshop for this year about the intro to Machine Learning “How to train your machine” tomorrow, October 15, 2021 at 9 pm EST on Zoom. </br></br>
+
+                    Everyone is welcome to join and attend this event without any registration.</br></br>
+
+                    Click the link to join! <a href="https://yorku.zoom.us/j/97698918196?pwd=OEtza3ZOL09wQ2lrS25FbWl0MkdJQT09">Link</a> 
+                 </p>
+            </div>
+        </section>
+
+        
+        <section class="card" data-aos="fade-up-left">
+          <img src="images/past/1.png" />
+            <div class="details">
+                <p> Remember CSHub? </br></br>
+
+                    We’re back and better than ever with a new team of execs and we’ll be hosting our first General Meeting of 2021-22 tomorrow at 9:00 pm sharp on discord. </br></br>
+                    
+                    Everyone is welcome and encouraged to joined if you wanna be a part of our club and get to know us exes and fellow members. New members are also encouraged to join to interact with existing members to get to know our community. </br></br>
+                    
+                    We will also have our weekly social night after the general meeting where there’s gonna be hosting Online games.
+                 </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="jump2"></br><hr></div>
+    <div class="content">
+        <p class="contain_head"><b>Executives</b></p>
+        <div class="mySlides fade">
+            <img src="images/Exec/Kev.jpg" alt="Kevin">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="images/Exec/Jordan.jpg" alt="Jordan">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="images/Exec/fayaz.jpg" alt="Fayaz">
+          </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Vivaan.jpg" alt="Vivaan">
+            </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Sam.jpg" alt="Samantha">
+            </div>
+  
+          <div class="mySlides fade">
+          <img src="images/Exec/Shafin.jpg" alt="Shafin">
+          </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Ibrahim.jpg" alt="Ibrahim">
+              </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Jason.jpg" alt="Jason">
+              </div>
+                
+        <div class="mySlides fade">
+        <img src="images/Exec/Minh.jpg" alt="Minh">
+        </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Henry.jpg" alt="Henry">
+              </div>
+          
+          <div class="mySlides fade">
+              <img src="images/Exec/Hrutik.jpg" alt="Hrutik">
+              </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Mickey.jpg" alt="Mickey">
+              </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Arianne.jpg" alt="Arianne">
+              </div>
+  
+          <div class="mySlides fade">
+              <img src="images/Exec/Syed.jpg" alt="Syed">
+          </div> 
+      
+          <div class="slidebutton">
+          <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          </div>
+  
+          <br>
+  
+          <div class="next">
+              <img src="images/Exec/execs.png" alt="Executives">
+          </div>
+      </div>
+    </div>
+    
+        <div id="jump3"></br></br><hr></div>
+    <div class="content">
+        <p class="contain_head"><b>About</b></p>
+        <p class="point">1. We represent computing students and their needs, more specifically students in the following programs: Computer Science, Computer Security, Digital Media, Computer Engineering and Software Engineering.</p>
+        <p class="nxtpoint">With the constantly changing industry there are times when it may seem that our program doesn't adapt quickly enough. We aim to bridge the gap between what we learn in our classes and the technologies that many employers deem relevant.</p>
+        <p class="point">2. Provide an environment that encourages creative thinking, innovation and entrepreneurship.</p>
+        <p class="nxtpoint">Our goal is to make students develop unique ways of thinking as well as encourage collaboration between other faculties in order to inspire projects that students are actually passionate about.</p>
+        <p class="point">3. Create a more vibrant and engaged student community.</p>
+        <p class="nxtpoint">We aspire to maintain a responsive collective where students can come to for input and advice, no matter whether it is their first year or their final year.</p>
+        <hr>
+
+        <div class="contact">
+            <p>Contact Information:<br>
+                102E, Bergeron Centre for Engineering Excellence<br>
+                York University<br>
+                Toronto, ON M3J1P3<br>
+                Canada</p>
+        </div>
+    
+    </div>
+
+    <footer>
       <ul>
-        <li>Socialize:</li>
-        <em>||</em>
+        <li><b>Socialize:</b></li>
         <li>
           <a href="https://instagram.com/cshub_york?utm_medium=copy_link"
-            ><i class="fab fa-instagram"></i
+            ><span id="insta"><i class="fab fa-instagram"></i></span
           ></a>
         </li>
-        <em>||</em>
         <li>
-          <a href="https://invite.gg/cshub"><i class="fab fa-discord"></i></a>
+          <a href="https://invite.gg/cshub"
+            ><span id="discord"><i class="fab fa-discord"></i></span
+          ></a>
         </li>
-        <em>||</em>
         <li>
           <a href="https://www.reddit.com/user/YorkCSHub/"
-            ><i class="fab fa-reddit"></i
+            ><span id="reddit"><i class="fab fa-reddit"></i></span
           ></a>
         </li>
-        <em>||</em>
         <li>
           <a href="https://www.facebook.com/thecshub/"
-            ><i class="fab fa-facebook"></i
+            ><span id="facebook"><i class="fab fa-facebook"></i></span
           ></a>
         </li>
         <br />
-        <li id="dsn">&copy;Web design & development: Shafin</li>
+        <li id="dsn"><b>&copy;Web design & development: Shafin</b></li>
       </ul>
-    </div>
+    </footer>
+    <script src="script/Home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
   </body>
 </html>
