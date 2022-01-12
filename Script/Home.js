@@ -1,19 +1,17 @@
-// window.onload = function() {
-//     slideShow();
-//   };
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function(){
 
-// var index = 0;
-// function slideShow() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   index++;
-//   if (index > slides.length) {index = 1}    
-//   slides[index-1].style.display = "block";  
-//   setTimeout(slideShow, 2000); 
-// }
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 
 function classToggle() {
   const navs = document.querySelectorAll('.Navbar__Items')
@@ -23,7 +21,7 @@ function classToggle() {
 
 document.querySelector('.Navbar__Link-toggle')
   .addEventListener('click', classToggle);
-  
+
 
 window.onload = function() {
   slideShow();
