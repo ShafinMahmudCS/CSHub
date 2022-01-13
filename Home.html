@@ -33,46 +33,73 @@
 
   </head>
   <body>
+
+    <!-- preloader -->
+    <div class="spinner-wrapper">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    
+    <!-- navbar -->
     <div class="navigation">
+
+      <!-- nav logo -->
       <img
         class="Navbar__Link Navbar__Link-brand"
         src="images/icon/cshub.png"
         alt="icon"
-        id="i_con"
+        id="icon"
       />
+
       <div class="Navbar__Link Navbar__Link-toggle">
         <span id="tog"><i class="fas fa-bars"></i></span>
       </div>
 
-      <nav class="Navbar__Items Navbar__Items--right" id="alignment">
+      <nav class="Navbar__Items Navbar__Items--right">
         <a href="Home.html">Home</a>
-        <a href="#events">Events</a>
-        <a href="#execs">Executives</a>
         <a href="#about">About</a>
+        <a href="#execs">Executives</a>
+        <a href="#events">Events</a>
        
       </nav>
     </div>
 
-    <div class="content">
-      <h1>Computing Students Hub</h1>
+    <!-- gif -->
+  <div id="gif">
+    <img src="https://media.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif">
+    <img src=" https://media.giphy.com/media/jM4NGpvx6jZmW93hcZ/giphy.gif">
+    <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif">
+  </div>
 
-      <p id="point">
-        The club will be operated for educational and scientific purposes in
-        furtherance of:
-      </p>
-      <p id="nxtpoint">
-        - Promoting an increased knowledge of computer science and its
-        applications.
-      </p>
-      <p id="point">
-        - Promoting a greater interest in computer science and its applications.
-      </p>
-      <p id="nxtpoint">
-        - Providing a means of communication between persons having interest in
-        computer science
-      </p>
-      <p id="point">- Promoting innovation and entrepreneurship.</p>
-      <hr />
+  <!-- EAT SLEEP CODE -->
+  <svg id="filters">
+    <defs>
+        <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0	0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+        </filter>
+    </defs>
+</svg>
+
+  <div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+</div>
+
+     
+    <div class="mainHeader">
+       <div><figure>
+        <img id="headingLogo" src="images/icon/logo.png" alt="logo">
+        <figcaption>Computing Students Hub</figcaption>
+      </figure></div> 
+      <div>
+
+        <!-- quotes -->
       <p class="quote">
         “The computer was born to solve problems that did not exist before.” —
         Bill Gates
@@ -81,101 +108,70 @@
         “One machine can do the work of fifty ordinary men. No machine can do
         the work of one extraordinary man.” - Elbert Hubbard
       </p>
+      </div>
+    
+  </div> 
+
+  <!-- Other informations -->
+  <div id="info">
+    <p id="point">
+      The club will be operated for educational and scientific purposes in
+      furtherance of:
+    </p>
+    <p id="nxtpoint">
+      - Promoting an increased knowledge of computer science and its
+      applications.
+    </p>
+    <p id="point">
+      - Promoting a greater interest in computer science and its applications.
+    </p>
+    <p id="nxtpoint">
+      - Providing a means of communication between persons having interest in
+      computer science
+    </p>
+    <p id="point">- Promoting innovation and entrepreneurship.</p>
+    
+  </div>
+  
+
+<hr class="seperate">
+  <!-- About -->
+    <div id="about"></br>
+
+      <div class="content">
+        <p class="contain_head" class="text text--bulge" data-scroll="out" data-splitting=""><b>About</b></p>
+        <p class="point">1. We represent computing students and their needs, more specifically students in the following programs: Computer Science, Computer Security, Digital Media, Computer Engineering and Software Engineering.</p>
+        <p class="nxtpoint">With the constantly changing industry there are times when it may seem that our program doesn't adapt quickly enough. We aim to bridge the gap between what we learn in our classes and the technologies that many employers deem relevant.</p>
+        <p class="point">2. Provide an environment that encourages creative thinking, innovation and entrepreneurship.</p>
+        <p class="nxtpoint">Our goal is to make students develop unique ways of thinking as well as encourage collaboration between other faculties in order to inspire projects that students are actually passionate about.</p>
+        <p class="point">3. Create a more vibrant and engaged student community.</p>
+        <p class="nxtpoint">We aspire to maintain a responsive collective where students can come to for input and advice, no matter whether it is their first year or their final year.</p>
+    </div>  
+
+      <div id="aside">
+        <img id="aboutImg" src="images/icon/about.png">
+        <div class="contact">
+            <p>Contact Information:<br>
+                102E, Bergeron Centre for Engineering Excellence<br>
+                York University<br>
+                Toronto, ON M3J1P3<br>
+                Canada</p>
+        </div>
     </div>
     
-    
-    
-        <div id="events"></br><hr></div>
-        <main class="container">
-            <p class="contain_head"><b>Events</b></p>
+  </div>
 
-            <section class="card" data-aos="flip-left" data-aos-duration="1500">
-                <img src="images/past/6.png"/>
-                <div class="details">
-                    <p>The workshop will teach you how to build a website using Javascript and React. If you don't know React, it's a library built by Facebook using JavaScript to help build responsive websites and it's very beginner-friendly.</br></br>
-
-                        PLEASE NOTE that you are required to install a few things before the event begins and REGISTER in order to join the zoom. The things you need to install are as follows:</br>
-                        1) node.js</br>
-                        2) Visual Studio Code</br>
-                        3) Git Bash (Windows users only).</br></br>
-
-                        Here's the registration link to join the zoom meeting on December 1st: <a href="https://yorkurobotics.com/react-signup">Link</a>
-                        </p>
-                </div>
-            </section>
-
-        <section class="card" data-aos="fade-up-left">
-            <img src="images/past/5.png"/>
-            <div class="details">
-                <p>
-                    We're partnering up with Lassonde Engineering Society to host a Leetcode session on November 8th, from 6-8 pm on Zoom.  Prolems from all categories (Easy/Medium/Hardcode). There will be mentors who will help you solve leetcode problems during the event.</br></br>
-
-                    If you do not know what leetcode is, it's basically a website where you can solve problems which companies ask during coding interviews. You do not need prior experience as we're here to show you how to approach the thought process of these problems.</br></br>
-                    Here's the zoom link: <a href="https://yorku.zoom.us/j/91038905074?pwd=MjFIblc4ajJndFlQeW9aR3dmaTNKdz09">Link</a>
-                 </p>
-            </div>
-        </section>
-    
-        <!-- Photo by maitree rimthong from Pexels -->
-        <section class="card" data-aos="fade-up-right">
-            <img src="images/past/4.png" />
-            <div class="details">
-                <p>Are you applying for co-op or plan on applying for a co-op/internship? Well look no further as we’re hosting our very own co-op panel with students who did co-op in the past. Our hosts will share their co-op experiences and what you can expect.</br></br>
-
-                    We will be hosting it on Zoom on Thursday, Nov 4th at 9 pm and you don’t need any registration. The Zoom link will be provided a day before the event starts.</br></br>
-                    
-                    If you have any specific questions about co-op you want us to answer during the presentation, please fill out the following Google form: <a href="https://forms.gle/Ar3oGHGofeYLYxA37">Link</a>
-                    
-                  </p>
-            </div>
-        </section>
-    
-        <!-- Photo by RODNAE Productions from Pexels -->
-        <section class="card" data-aos="flip-right" data-aos-duration="1500">
-            <img src="images/past/3.png" />
-            <div class="details">
-                <p>There will be a MATH 1019 midterm review at 4pm EST hosted by CSHub.</br></br> We have prepared some sample questions for you!
-                 </p>
-            </div>
-        </section>
-    
-        <section class="card" data-aos="fade-up-right">
-            <img src="images/past/2.png" />
-            <div class="details">
-                <p>We’re hosting our second workshop for this year about the intro to Machine Learning “How to train your machine” tomorrow, October 15, 2021 at 9 pm EST on Zoom. </br></br>
-
-                    Everyone is welcome to join and attend this event without any registration.</br></br>
-
-                    Click the link to join! <a href="https://yorku.zoom.us/j/97698918196?pwd=OEtza3ZOL09wQ2lrS25FbWl0MkdJQT09">Link</a> 
-                 </p>
-            </div>
-        </section>
-
-        
-        <section class="card" data-aos="fade-up-left">
-          <img src="images/past/1.png" />
-            <div class="details">
-                <p> Remember CSHub? </br></br>
-
-                    We’re back and better than ever with a new team of execs and we’ll be hosting our first General Meeting of 2021-22 tomorrow at 9:00 pm sharp on discord. </br></br>
-                    
-                    Everyone is welcome and encouraged to joined if you wanna be a part of our club and get to know us exes and fellow members. New members are also encouraged to join to interact with existing members to get to know our community. </br></br>
-                    
-                    We will also have our weekly social night after the general meeting where there’s gonna be hosting Online games.
-                 </p>
-            </div>
-        </section>
-    </main>
-
-    <div id="execs"></br><hr></div>
-    <div class="content">
+    <!-- Execs -->
+    <div id="execs"></br><hr class="seperate"></div>
+    <div class="execContent">
         <p class="contain_head"><b>Executives</b></p>
-        <div class="mySlides fade">
-            <img src="images/Exec/Kev.jpg" alt="Kevin">
-          </div>
-          
-          <div class="mySlides fade">
+
+           <div class="mySlides fade">
             <img src="images/Exec/Jordan.jpg" alt="Jordan">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/Exec/Kev.jpg" alt="Kevin">
           </div>
           
           <div class="mySlides fade">
@@ -239,27 +235,81 @@
           </div>
       </div>
     </div>
-    
-        <div id="about"></br><hr></div>
-    <div class="content">
-        <p class="contain_head"><b>About</b></p>
-        <p class="point">1. We represent computing students and their needs, more specifically students in the following programs: Computer Science, Computer Security, Digital Media, Computer Engineering and Software Engineering.</p>
-        <p class="nxtpoint">With the constantly changing industry there are times when it may seem that our program doesn't adapt quickly enough. We aim to bridge the gap between what we learn in our classes and the technologies that many employers deem relevant.</p>
-        <p class="point">2. Provide an environment that encourages creative thinking, innovation and entrepreneurship.</p>
-        <p class="nxtpoint">Our goal is to make students develop unique ways of thinking as well as encourage collaboration between other faculties in order to inspire projects that students are actually passionate about.</p>
-        <p class="point">3. Create a more vibrant and engaged student community.</p>
-        <p class="nxtpoint">We aspire to maintain a responsive collective where students can come to for input and advice, no matter whether it is their first year or their final year.</p>
-        <hr>
 
-        <div class="contact">
-            <p>Contact Information:<br>
-                102E, Bergeron Centre for Engineering Excellence<br>
-                York University<br>
-                Toronto, ON M3J1P3<br>
-                Canada</p>
-        </div>
+    <!-- Events -->
+        <div id="events"></br><hr class="seperate"></div>
+        <div class="container">
+            <p class="contain_head"><b>Events</b></p>
+            <p id="time">September 2021 to December 2021</p>
+
+            <section class="card" data-aos="flip-left" data-aos-duration="1500">
+                <img src="images/past/6.png"/>
+                <div class="details">
+                    <p>The workshop will teach you how to build a website using Javascript and React. If you don't know React, it's a library built by Facebook using JavaScript to help build responsive websites and it's very beginner-friendly.</br></br>
+
+                        PLEASE NOTE that you are required to install a few things before the event begins and REGISTER in order to join the zoom. The things you need to install are as follows:</br>
+                        1) node.js</br>
+                        2) Visual Studio Code</br>
+                        3) Git Bash (Windows users only).</br></br>
+                        </p>
+                </div>
+            </section>
+
+        <section class="card" data-aos="fade-up-left">
+            <img src="images/past/5.png"/>
+            <div class="details">
+                <p>
+                    We're partnering up with Lassonde Engineering Society to host a Leetcode session on November 8th, from 6-8 pm on Zoom.  Prolems from all categories (Easy/Medium/Hardcode). There will be mentors who will help you solve leetcode problems during the event.</br></br>
+
+                    If you do not know what leetcode is, it's basically a website where you can solve problems which companies ask during coding interviews. You do not need prior experience as we're here to show you how to approach the thought process of these problems.</br></a>
+                 </p>
+            </div>
+        </section>
     
-    </div>
+        <section class="card" data-aos="fade-up-right">
+            <img src="images/past/4.png" />
+            <div class="details">
+                <p>Are you applying for co-op or plan on applying for a co-op/internship? Well look no further as we’re hosting our very own co-op panel with students who did co-op in the past. Our hosts will share their co-op experiences and what you can expect.</br></br>
+
+                    We will be hosting it on Zoom on Thursday, Nov 4th at 9 pm and you don’t need any registration. The Zoom link will be provided a day before the event starts.</br></br>
+                    
+                  </p>
+            </div>
+        </section>
+    
+        <section class="card" data-aos="flip-right" data-aos-duration="1500">
+            <img src="images/past/3.png" />
+            <div class="details">
+                <p>There will be a MATH 1019 midterm review at 4pm EST hosted by CSHub.</br></br> We have prepared some sample questions for you!
+                 </p>
+            </div>
+        </section>
+    
+        <section class="card" data-aos="fade-up-right">
+            <img src="images/past/2.png" />
+            <div class="details">
+                <p>We’re hosting our second workshop for this year about the intro to Machine Learning “How to train your machine” tomorrow, October 15, 2021 at 9 pm EST on Zoom. </br></br>
+
+                    Everyone is welcome to join and attend this event without any registration.</br>
+                 </p>
+            </div>
+        </section>
+
+        
+        <section class="card" data-aos="fade-up-left">
+          <img src="images/past/1.png" />
+            <div class="details">
+                <p> Remember CSHub? </br></br>
+
+                    We’re back and better than ever with a new team of execs and we’ll be hosting our first General Meeting of 2021-22 tomorrow at 9:00 pm sharp on discord. </br></br>
+                    
+                    Everyone is welcome and encouraged to joined if you wanna be a part of our club and get to know us exes and fellow members. New members are also encouraged to join to interact with existing members to get to know our community. </br></br>
+                    
+                    We will also have our weekly social night after the general meeting where there’s gonna be hosting Online games.
+                 </p>
+            </div>
+        </section>
+      </div>
 
     <footer>
       <ul>
